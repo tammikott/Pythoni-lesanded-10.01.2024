@@ -70,9 +70,8 @@ tervitused
 mündid
 '''
 def sendid():
-
-failinimie = int(input("Mis faili nimi?: "))
-fail = open(failinimi, encoding="utf-8")
+  failinimi = input("Mis faili nimi?: ")
+  fail = open(failinimi, encoding="utf-8")
 
 
 
