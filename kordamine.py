@@ -1,6 +1,36 @@
 #Kordamine
 #Ott Tammik 16.01.2024
 
+
+
+# Koosta programm, mis kontrollib, kas kasutaja poolt sisestatud arv on paaris vĆµi paaritu
+#	kuvatakse korrektne arusaadav kĆ¼simus ja vastus - 1p
+#	eelnev kontroll, kas kasutaja ei lisanud arvu või pani nulli - 1p
+#	kood mis teavitab paaris vĆµi paaritust arvust - 1p
+#	kuvatakse programmi pealkiri - 1p
+#	kood kommenteeritud - 1p
+
+def paarispaaritu():
+    sisestamine = input("Sisesta arv: ")
+    arv = int(sisestamine)
+    if arv % 2 == 0:
+        print(f"{arv} on paaris")
+    else:
+        print(f"{arv} on paaritu")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #  List Less Than Ten
 # 	Take a list and write a program that prints out all the elements of the list that are less than 5. 1p
 # 		a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
@@ -12,8 +42,6 @@
 
 
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-def list(a)
-    
 
 
 
@@ -22,7 +50,8 @@ def list(a)
 
 
 
-list(a)
+
+
 
 
 
@@ -56,9 +85,9 @@ vanus(vanused)
 # negatiivne = [-1, -7, -11, -9, -14, -21, -31, -3, -18, -21, -24,]
 # def loendid():
     
-#     for i in range (5):
-#         arvud = int(input("Kirjuta 5 positiivset või negatiivset arvu: "))
-#     if 
+#for i in range (5):
+#    arvud = int(input("Kirjuta 5 positiivset või negatiivset arvu: "))
+#if 
 
 # loendid()
 
