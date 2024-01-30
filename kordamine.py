@@ -1,6 +1,35 @@
 #Kordamine
 #Ott Tammik 16.01.2024
 
+import random
+
+
+#TĆ¤ringud
+#	kuvatakse korrektne arusaadav kĆ¼simus ja hiljem vastus - 1p
+#	kasutaja vĆµistleb kahe tĆ¤ringuga arvuti vastu - 1p
+#	kasutaja teeb pakkumise ning suurima tĆ¤ringupunktisumma vĆµitja saab laual oleva raha endale - 2p
+#	kood kommenteeritud - 1p
+
+def taringud():
+
+    kasutaja = random.randint(1, 20) + random.randint(1, 20)
+    arvuti = random.randint(1, 20) + random.randint(1, 20)
+
+    raha = int(input("kui palju raha sisse paned? "))
+    print(raha, "sinu sisestatud raha")
+    
+    if kasutaja > arvuti:
+        print("Sa võitsid! Saad kõik raha endale!")
+        print(raha * 2)
+    else:
+        print("Sa kaotasid! Anna kõik raha siia.")
+
+
+
+
+taringud():
+
+
 
 
 # Koosta programm, mis kontrollib, kas kasutaja poolt sisestatud arv on paaris vĆµi paaritu
