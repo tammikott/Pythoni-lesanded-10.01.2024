@@ -3,6 +3,26 @@
 
 import random
 
+#KaugushĆ¼pe
+#	kasutaja sisestab 3 kaugushĆ¼ppe tulemust - 1p
+#	sinu programm leiab ning vĆ¤ljastab parima ja keskmise tulemuse - 2p
+#	programmi dialoog kasutajaga on arusaadav ja Ć¼heselt mĆµistetav - 1p
+#	kood kommenteeritud - 1p
+
+
+def kaugushupe():
+    tulemused = []
+    for i in range (3):
+        tulemus = float(input("Sisesta oma kaugushupe tulemused: "))
+        tulemused.append(tulemus)
+
+    print("Sinu parim tulemus oli", max(tulemused))
+    kogusumma = sum(tulemused)
+    print("Keskmine tulemus", kogusumma/len(tulemused))
+
+
+kaugushupe()
+
 
 #TĆ¤ringud
 #	kuvatakse korrektne arusaadav kĆ¼simus ja hiljem vastus - 1p
@@ -11,23 +31,31 @@ import random
 #	kood kommenteeritud - 1p
 
 def taringud():
+    k_konto = 0
+    a_konto = 0
 
     kasutaja = random.randint(1, 20) + random.randint(1, 20)
     arvuti = random.randint(1, 20) + random.randint(1, 20)
 
     raha = int(input("kui palju raha sisse paned? "))
-    print(raha, "sinu sisestatud raha")
-    
+    print(raha, "Sisse pandud raha")
     if kasutaja > arvuti:
-        print("Sa võitsid! Saad kõik raha endale!")
+        print("Sa võitsid!")
         print(raha * 2)
-    else:
+        k_konto = raha * 2
+        print("Kasutaja kontol on nüüd", k_konto)
+    elif arvuti > kasutaja:
         print("Sa kaotasid! Anna kõik raha siia.")
+        print(raha * 2)
+        a_konto = raha * 2
+        print("Arvuti kontol on nüüd", a_konto)
+    else:
+        print("Viik! Saad raha tagasi")
 
 
 
 
-taringud():
+taringud()
 
 
 
@@ -102,9 +130,9 @@ def vanus(vanused):
     
     print("suurim vanus on", max(vanused))
     print("väikseim vanus on", min(vanused))
-    kogusumma = sum(vanused)
-    print("kogusumma on", (kogusumma))
-    print("keskmine on", kogusumma/len(vanused))
+    summa = sum(vanused)
+    print("kogusumma on", (summa))
+    print("keskmine on", summa/len(vanused))
 
 vanus(vanused)
 
