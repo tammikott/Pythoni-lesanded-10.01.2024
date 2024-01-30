@@ -3,6 +3,19 @@
 
 import random
 
+#Eurokalkulaator
+#	Koosta programm, mis kalkuleerib valuuta vastavalt kasutaja soovile EUR->EEK vĆµi EEK->EUR.
+#	Oluline on kasutada kahte funktsiooni!!
+
+
+
+
+
+
+
+
+
+
 #KaugushĆ¼pe
 #	kasutaja sisestab 3 kaugushĆ¼ppe tulemust - 1p
 #	sinu programm leiab ning vĆ¤ljastab parima ja keskmise tulemuse - 2p
@@ -41,12 +54,10 @@ def taringud():
     print(raha, "Sisse pandud raha")
     if kasutaja > arvuti:
         print("Sa võitsid!")
-        print(raha * 2)
         k_konto = raha * 2
         print("Kasutaja kontol on nüüd", k_konto)
     elif arvuti > kasutaja:
         print("Sa kaotasid! Anna kõik raha siia.")
-        print(raha * 2)
         a_konto = raha * 2
         print("Arvuti kontol on nüüd", a_konto)
     else:
