@@ -4,6 +4,34 @@
 import random
 
 
+
+
+#Võtke nimekiri ja kirjutage programm, mis prindib välja kõik loendi elemendid, mis on väiksemad kui 5. 1p
+#Selle asemel, et printida elemente ükshaaval, tehke uus loend, milles on kõik selle loendi elemendid alla 5, ja printige see uus loend välja. 1p
+#Kirjutage see ühele Pythoni reale. 1p
+#Küsige kasutajalt numbrit ja tagastage loend, mis sisaldab ainult algse loendi elemente, mis on väiksemad kui kasutaja antud arv. 1p
+
+
+
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+
+def list(a):
+    a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+    b = []
+    [b.append[i] for i in a if i < 5]
+    print(b)
+    kasutaja_kusimus = int(input("vali number: \n"))
+
+
+
+
+
+list(a)
+
+
+
+
 #14. Palkade vĆµrdlus - Loo palk.txt fail tĆ¶Ć¶tajate nime, soo ja palganumbriga (10 tĆ¶Ć¶tajat).
 #	Koosta programm, mis analĆ¼Ć¼sib kas firmas toimub diskrimineerimist soo jĆ¤rgi. Selleks vĆµrdle omavahel meeste ja naiste palkade keskmiseid, samuti meeste ja naiste kĆµige kĆµrgemat palka. Programm peab tegema otsuse.
 #
@@ -25,8 +53,8 @@ def palgavordlus():
 
     fail = open("palgad.txt", encoding="UTF-8")
     for rida in fail:
-        print("Lugesin sellise rea: " + rida)
-    fail.close()
+        print("Need on tootajate palgad: " + rida)
+        
 
 
 
@@ -85,11 +113,11 @@ def taringud():
     if kasutaja > arvuti:
         print("Sa võitsid!")
         k_konto = raha * 2
-        print("Kasutaja kontol on nüüd", k_konto)
+        print("Kasutaja kontol on nüüd", k_konto + raha * 2)
     elif arvuti > kasutaja:
         print("Sa kaotasid! Arvuti võtab su raha.")
-        a_konto = raha
-        print("Arvuti kontol on nüüd", a_konto)
+        a_konto = raha * 2
+        print("Arvuti kontol on nüüd", a_konto + raha * 2)
     else:
         print("Viik! Saad raha tagasi")
 
@@ -119,27 +147,9 @@ def paarispaaritu():
 
 
 
+paarispaaritu()
 
 
-
-
-
-
-
-
-
-
-#  List Less Than Ten
-# 	Take a list and write a program that prints out all the elements of the list that are less than 5. 1p
-# 		a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-# 	Instead of printing the elements one by one, make a new list that has all the elements less than 5 from this list in it and print out this new list. 1p
-# 	Write this in one line of Python. 1p
-# 	Ask the user for a number and return a list that contains only elements from the original list a that are smaller than that number given by the user
-
-
-
-
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
 
 
