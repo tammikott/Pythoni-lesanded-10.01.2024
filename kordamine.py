@@ -3,6 +3,36 @@
 
 import random
 
+
+#14. Palkade vĆµrdlus - Loo palk.txt fail tĆ¶Ć¶tajate nime, soo ja palganumbriga (10 tĆ¶Ć¶tajat).
+#	Koosta programm, mis analĆ¼Ć¼sib kas firmas toimub diskrimineerimist soo jĆ¤rgi. Selleks vĆµrdle omavahel meeste ja naiste palkade keskmiseid, samuti meeste ja naiste kĆµige kĆµrgemat palka. Programm peab tegema otsuse.
+#
+#	Hubert Hunt m 2340
+#	Siim Siil m 2570
+#	MĆ¤rt MĆ¤ger m 1960
+#	Vilma Vihmauss n 2060
+#	Merike Metskits n 2250
+#	Kati Karu n 2370
+#	Elmar Elevant m 2900
+#	Timoteus Tigu m 2850
+#	Reet Rebane n 2340
+#	Kalev Kaamel m 2570
+#	Karmen Kass n 2120
+#	Kornelius Koer m 2250
+
+
+def palgavordlus():
+
+    fail = open("palgad.txt", encoding="UTF-8")
+    for rida in fail:
+        print("Lugesin sellise rea: " + rida)
+    fail.close()
+
+
+
+palgavordlus()
+
+
 #Eurokalkulaator
 #	Koosta programm, mis kalkuleerib valuuta vastavalt kasutaja soovile EUR->EEK vĆµi EEK->EUR.
 #	Oluline on kasutada kahte funktsiooni!!
@@ -57,8 +87,8 @@ def taringud():
         k_konto = raha * 2
         print("Kasutaja kontol on nüüd", k_konto)
     elif arvuti > kasutaja:
-        print("Sa kaotasid! Anna kõik raha siia.")
-        a_konto = raha * 2
+        print("Sa kaotasid! Arvuti võtab su raha.")
+        a_konto = raha
         print("Arvuti kontol on nüüd", a_konto)
     else:
         print("Viik! Saad raha tagasi")
