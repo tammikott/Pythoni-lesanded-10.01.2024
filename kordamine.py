@@ -16,18 +16,13 @@ import random
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
 
-def list(a):
+def list():
     a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-    b = []
-    [b.append[i] for i in a if i < 5]
+    b = [i for i in a if i < 5]
     print(b)
     kasutaja_kusimus = int(input("vali number: \n"))
 
-
-
-
-
-list(a)
+list()
 
 
 
